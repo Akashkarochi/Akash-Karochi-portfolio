@@ -1,135 +1,166 @@
 <!DOCTYPE html>
-<html lang="en" class="scroll-smooth">
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Akash Karochi | Full Stack Developer</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Akash Karochi - Portfolio</title>
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="style.css" />
 </head>
-<body class="bg-[#020617] text-slate-200">
+<body>
+<!-- Scroll Progress Bar -->
+<div class="progress-container">
+    <div class="progress-bar"></div>
+</div>
 
-    <div class="fixed top-0 left-0 w-full h-full overflow-hidden -z-10">
-        <div class="absolute top-[-10%] left-[-10%] w-[50%] h-[50%] bg-blue-900/10 blur-[120px] rounded-full"></div>
-        <div class="absolute bottom-[-10%] right-[-10%] w-[50%] h-[50%] bg-indigo-900/10 blur-[120px] rounded-full"></div>
+<!-- Header -->
+<header>
+    <div class="container header-container">
+        <h1 class="logo">Akash <span>Karochi</span></h1>
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#certifications">Certifications</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
     </div>
+</header>
 
-    <nav class="fixed w-full z-50 p-6">
-        <div class="max-w-6xl mx-auto glass rounded-2xl px-8 py-4 flex justify-between items-center border border-white/5">
-            <span class="text-xl font-bold tracking-tighter italic uppercase">Akash<span class="text-blue-500">.</span></span>
-            <div class="hidden md:flex space-x-10 text-[11px] font-black uppercase tracking-[0.2em] text-slate-400">
-                <a href="#projects" class="hover:text-blue-400 transition">Projects</a>
-                <a href="#experience" class="hover:text-blue-400 transition">Journey</a>
-                <a href="#contact" class="hover:text-blue-400 transition">Contact</a>
-            </div>
-            <a href="https://linkedin.com/in/akashkarochi" target="_blank" class="bg-blue-600 hover:bg-blue-700 px-6 py-2 rounded-xl text-xs font-bold transition shadow-lg shadow-blue-900/20">LinkedIn</a>
+<!-- About / Introduction -->
+<section id="about" class="section about fade-in">
+    <div class="container">
+        <h2 class="typing-effect">Hi, I'm Akash Karochi</h2>
+        <p class="subtitle">Full Stack Developer | React.js, Node.js, PHP, MySQL</p>
+        <a href="#contact" class="btn CTA">Get in Touch</a>
+    </div>
+</section>
+
+<!-- Skills -->
+<section id="skills" class="section skills fade-in">
+    <div class="container">
+        <h2>Skills & Technologies</h2>
+        <div class="skills-grid">
+            <div class="skill">JavaScript</div>
+            <div class="skill">HTML5</div>
+            <div class="skill">CSS3</div>
+            <div class="skill">Node.js</div>
+            <div class="skill">PHP</div>
+            <div class="skill">MySQL</div>
+            <div class="skill">Git</div>
+            <div class="skill">React.js</div>
+            <div class="skill">Bootstrap</div>
+            <div class="skill">Python</div>
+            <div class="skill">REST API</div>
+            <div class="skill">Angular.js</div>
+            <div class="skill">Express.js</div>
+            <div class="skill">MongoDB</div>
+            <div class="skill">Vercel</div>
+            <div class="skill">Postman</div>
         </div>
-    </nav>
+    </div>
+</section>
 
-    <section class="min-h-screen flex flex-col justify-center items-center px-6 pt-20">
-        <div class="inline-block px-5 py-2 mb-8 rounded-full border border-blue-500/20 bg-blue-500/5 text-blue-400 text-[10px] font-black uppercase tracking-[0.3em] animate__animated animate__fadeIn">
-            Full Stack Engineer • Nashik, India
+<!-- Experience -->
+<section id="experience" class="section experience fade-in">
+    <div class="container">
+        <h2>Experience</h2>
+        <div class="experience-item">
+            <h3>Web Development Intern @ Hex Softwares Pvt. Ltd.</h3>
+            <p class="duration">Feb 2026 - Present</p>
+            <ul>
+                <li>Developing responsive UI components</li>
+                <li>Assisting backend feature integration</li>
+                <li>Debugging frontend/backend issues</li>
+                <li>Collaborating in agile teams</li>
+            </ul>
         </div>
-        <h1 class="text-6xl md:text-9xl font-black tracking-tighter text-center mb-8 animate__animated animate__fadeInUp leading-none">
-            AKASH <span class="text-gradient">KAROCHI</span>
-        </h1>
-        <p class="max-w-2xl text-center text-slate-400 text-lg md:text-xl mb-12 leading-relaxed font-medium">
-            Building high-performance applications with <span class="text-white font-bold">React, Node.js & PHP.</span> 
-            Currently engineering digital experiences at HEX Softwares.
-        </p>
-        <div class="flex flex-wrap justify-center gap-6">
-            <a href="#projects" class="bg-white text-black px-10 py-4 rounded-2xl font-black hover:bg-blue-500 hover:text-white transition-all transform hover:-translate-y-1">VIEW PROJECTS</a>
-            <a href="https://github.com/Akashkarochi" target="_blank" class="glass px-10 py-4 rounded-2xl font-black border border-white/10 hover:bg-white/5 transition flex items-center gap-3">
-                <i class="fab fa-github text-xl"></i> GITHUB
-            </a>
+        <div class="experience-item">
+            <h3>Web Development Intern @ Zidio Development</h3>
+            <p class="duration">Apr 2025 - Jul 2025</p>
+            <ul>
+                <li>Built full-stack web features</li>
+                <li>Optimized UI and backend logic</li>
+                <li>Designed scalable modules</li>
+            </ul>
         </div>
-    </section>
+    </div>
+</section>
 
-    <main class="max-w-6xl mx-auto px-6 pb-32 space-y-8">
-        
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <div id="experience" class="md:col-span-2 glass p-10 rounded-[3rem] border border-white/5">
-                <h3 class="text-2xl font-black mb-10 flex items-center gap-4 italic uppercase tracking-tighter">
-                    Professional <span class="text-blue-500">Journey</span>
-                </h3>
-                <div class="space-y-10">
-                    <div class="relative pl-8 border-l-2 border-blue-500/30">
-                        <div class="absolute w-4 h-4 bg-blue-500 rounded-full -left-[9px] top-1 ring-4 ring-blue-500/20"></div>
-                        <h4 class="text-xl font-bold text-white">Web Development Intern</h4>
-                        <p class="text-sm text-blue-400 font-bold uppercase tracking-widest mt-1">HEX Softwares • 2026 - Present</p>
-                        <p class="text-slate-500 mt-4 text-sm leading-relaxed">Developing functional web features and gaining hands-on experience with production-level code optimization.</p>
-                    </div>
-                    <div class="relative pl-8 border-l-2 border-white/10">
-                        <div class="absolute w-4 h-4 bg-slate-700 rounded-full -left-[9px] top-1"></div>
-                        <h4 class="text-xl font-bold text-slate-300">Project Manager</h4>
-                        <p class="text-sm text-slate-500 font-bold uppercase tracking-widest mt-1">NbliK • 2022 - 2023</p>
-                    </div>
-                </div>
-            </div>
+<!-- Education -->
+<section id="education" class="section education fade-in">
+    <div class="container">
+        <h2>Education</h2>
+        <p><strong>Sandip University</strong> — BCA, Computer Software Engineering (2024 - 2027)</p>
+    </div>
+</section>
 
-            <div class="glass p-10 rounded-[3rem] border border-white/5 flex flex-col justify-center bg-gradient-to-br from-blue-500/5 to-transparent">
-                <p class="text-[10px] font-black text-slate-500 uppercase tracking-[0.3em] mb-4">Personal Info</p>
-                <h4 class="text-lg font-bold text-white mb-2">Based in Nashik</h4>
-                <p class="text-slate-400 text-sm mb-6">Born on 22 Nov 2003. Currently pursuing BCA at Sandip University.</p>
-                <hr class="border-white/5 mb-6">
-                <h4 class="text-lg font-bold text-white mb-2">Hackathons</h4>
-                <p class="text-slate-400 text-sm italic">Participated in 10+ global challenges including NASA Space Apps.</p>
-            </div>
+<!-- Certifications -->
+<section id="certifications" class="section certifications fade-in">
+    <div class="container">
+        <h2>Certifications</h2>
+        <ul>
+            <li>Convolve 4.0 (Pan-IIT AI/ML Hackathon) — Participant</li>
+            <li>NASA International Space Apps Challenge 2024 — Participant</li>
+        </ul>
+    </div>
+</section>
+
+<!-- Projects & Live Demos -->
+<section id="projects" class="section projects fade-in">
+    <div class="container">
+        <h2>Projects & Live Demos</h2>
+        <div class="project">
+            <h3>2048 Game</h3>
+            <p>Built an interactive 2048 game clone with grid-based tile merging algorithm. Features include dynamic state updates, score tracking, responsive UI, and keyboard interaction.</p>
+            <p>Live Demo: <a href="https://mighty-emerald-825yiexqqh.edgeone.app/" target="_blank">https://mighty-emerald-825yiexqqh.edgeone.app/</a></p>
+            <p>GitHub: <a href="https://github.com/Akashkarochi/2048" target="_blank">https://github.com/Akashkarochi/2048</a></p>
         </div>
-
-        <div id="projects" class="grid grid-cols-1 md:grid-cols-2 gap-8">
-            <div class="glass p-12 rounded-[3rem] border border-white/5 hover:border-blue-500/30 transition-all group relative overflow-hidden">
-                <div class="relative z-10">
-                    <h3 class="text-3xl font-black mb-4 italic uppercase tracking-tighter">Interactive Globe</h3>
-                    <p class="text-slate-400 mb-8 leading-relaxed">Real-time geographic visualization tool. Optimized for high-performance data rendering.</p>
-                    <a href="https://yellow-louise-70.tiiny.site/" target="_blank" class="inline-flex items-center gap-2 text-blue-400 font-black text-xs uppercase tracking-widest group-hover:gap-4 transition-all">Launch Project <i class="fas fa-arrow-right"></i></a>
-                </div>
-                <i class="fas fa-globe absolute -right-12 -bottom-12 text-[200px] text-white/5 group-hover:text-blue-500/10 transition-all duration-700"></i>
-            </div>
-
-            <div class="glass p-12 rounded-[3rem] border border-white/5 hover:border-emerald-500/30 transition-all group relative overflow-hidden">
-                <div class="relative z-10">
-                    <h3 class="text-3xl font-black mb-4 italic uppercase tracking-tighter">2048 Game</h3>
-                    <p class="text-slate-400 mb-8 leading-relaxed">Strategic puzzle logic implemented with modern JavaScript state management.</p>
-                    <a href="https://mighty-emerald-825yiexqqh.edgeone.app/" target="_blank" class="inline-flex items-center gap-2 text-emerald-400 font-black text-xs uppercase tracking-widest group-hover:gap-4 transition-all">Play Now <i class="fas fa-arrow-right"></i></a>
-                </div>
-                <i class="fas fa-gamepad absolute -right-12 -bottom-12 text-[200px] text-white/5 group-hover:text-emerald-500/10 transition-all duration-700"></i>
-            </div>
+        <div class="project">
+            <h3>Globe Game</h3>
+            <p>Built an animated interactive globe using event-driven DOM manipulation. Optimized rendering logic for smoother user interaction with responsive design principles.</p>
+            <p>Live Demo: <a href="https://yellow-louise-70.tiiny.site/" target="_blank">https://yellow-louise-70.tiiny.site/</a></p>
+            <p>GitHub: <a href="https://github.com/Akashkarochi/Globe" target="_blank">https://github.com/Akashkarochi/Globe</a></p>
         </div>
-
-        <div class="glass p-10 rounded-[3rem] border border-white/5">
-            <h3 class="text-xl font-black mb-8 italic uppercase">Technical Toolkit</h3>
-            <div class="flex flex-wrap gap-4">
-                <span class="skill-tag">React.js</span>
-                <span class="skill-tag">Node.js</span>
-                <span class="skill-tag">PHP</span>
-                <span class="skill-tag">MySQL</span>
-                <span class="skill-tag">Tailwind CSS</span>
-                <span class="skill-tag">REST APIs</span>
-                <span class="skill-tag">Python</span>
-                <span class="skill-tag">JavaScript ES6+</span>
-            </div>
+        <div class="project">
+            <h3>DevInsight – GitHub Repository Health Analyzer</h3>
+            <p>Engineered a full-stack GitHub analytics platform integrating GitHub REST APIs to evaluate repository health in real-time. Implemented a scoring system analyzing stars, forks, issues, and commit activity.</p>
+            <p>Live Demo: <a href="https://gregarious-medovik-528512.netlify.app/" target="_blank">https://gregarious-medovik-528512.netlify.app/</a></p>
+            <p>GitHub: <a href="https://github.com/Akashkarochi/DevInsight" target="_blank">https://github.com/Akashkarochi/DevInsight</a></p>
         </div>
-    </main>
+    </div>
+</section>
 
-    <section id="contact" class="max-w-4xl mx-auto px-6 py-32 border-t border-white/5">
-        <div class="text-center mb-16">
-            <h2 class="text-5xl font-black italic mb-4 uppercase tracking-tighter">Start a <span class="text-blue-500">Conversation</span></h2>
-            <p class="text-slate-500 font-medium">Direct WhatsApp line for recruitment & collaborations</p>
+<!-- Contact & Download Resume -->
+<section id="contact" class="section contact fade-in">
+    <div class="container">
+        <h2>Contact & Resume</h2>
+        <p>Email: <a href="mailto:akashkarochi463@gmail.com">akashkarochi463@gmail.com</a></p>
+        <p>Website: <a href="https://www.akashkarochi.in" target="_blank">www.akashkarochi.in</a></p>
+        <p>Phone: +91 7440737602</p>
+        <div class="social-links">
+            <a href="https://www.linkedin.com/in/akashkarochi" target="_blank">LinkedIn</a>
+            <a href="https://github.com/Akashkarochi" target="_blank">GitHub</a>
+            <a href="https://www.akashkarochi.in" target="_blank">Portfolio</a>
         </div>
-        <div class="max-w-xl mx-auto space-y-6">
-            <input type="text" id="userName" placeholder="Your Name" class="input-field">
-            <textarea id="userMsg" placeholder="Project details or message..." rows="4" class="input-field"></textarea>
-            <button id="sendBtn" class="w-full bg-blue-600 py-5 rounded-2xl font-black tracking-widest hover:bg-blue-700 transition shadow-xl shadow-blue-900/40">SEND MESSAGE</button>
-        </div>
-    </section>
+        <a href="resume.pdf" class="btn download-resume" download>Download Resume</a>
+    </div>
+</section>
 
-    <footer class="py-20 text-center border-t border-white/5">
-        <p class="text-[10px] text-slate-600 font-black uppercase tracking-[0.8em]">AKASH KAROCHI • 22/11/2003 • NASHIK</p>
-    </footer>
+<!-- Footer -->
+<footer>
+    <div class="container">
+        <p>&copy; 2024 <span>Akash Karochi</span>. All rights reserved.</p>
+    </div>
+</footer>
 
-    <script src="script.js"></script>
+<!-- Animation Script -->
+<script src="script.js"></script>
 </body>
 </html>
+
